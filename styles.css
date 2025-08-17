@@ -1,0 +1,84 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Header */
+header {
+    background-color: #0f1c2e;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #0f1c2e;
+    margin-bottom: 1rem;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #0f1c2e;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1a2f4d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0f1c2e;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 8px;
+}

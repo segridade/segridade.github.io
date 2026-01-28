@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">           <!-- will be changed to "pt" by script when needed -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Segridade – Secure & Scalable Solutions</title>
+  <title data-en="Segridade – Secure & Scalable Solutions"
+        data-pt="Segridade – Soluções Seguras & Escaláveis">Segridade – Secure & Scalable Solutions</title>
 
-  <!-- Google Font (Montserrat) -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
         rel="stylesheet" />
 
-  <!-- Icon for the mobile menu (heroicon) -->
+  <!-- Feather icons (menu, X) -->
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-  <!-- Your stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -20,16 +20,22 @@
   <!-- ==================== HEADER & NAV ==================== -->
   <header id="top">
     <div class="container header__inner">
-      <h1 class="logo"><a href="#top">Segridade</a></h1>
+      <h1 class="logo"><a href="#top" data-en="Segridade" data-pt="Segridade">Segridade</a></h1>
+
+      <!-- Language switcher -->
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
 
       <nav class="nav" aria-label="Main navigation">
         <ul class="nav__list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services" data-en="Services" data-pt="Serviços">Services</a></li>
+          <li><a href="#about"    data-en="About"    data-pt="Sobre">About</a></li>
+          <li><a href="#contact"  data-en="Contact"  data-pt="Contacto">Contact</a></li>
         </ul>
 
-        <!-- Mobile burger button -->
+        <!-- Mobile burger -->
         <button class="nav__toggle" aria-label="Toggle menu">
           <i data-feather="menu"></i>
         </button>
@@ -40,41 +46,81 @@
   <!-- ==================== HERO ==================== -->
   <section class="hero">
     <div class="container hero__content">
-      <h2>Secure, Scalable, Open‑Source Driven</h2>
-      <p>We build resilient systems, automate workflows and keep your data safe.</p>
-      <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      <h2 data-en="Secure, Scalable, Open‑Source Driven"
+          data-pt="Seguro, Escalável, Impulsionado por Código‑Aberto">
+        Secure, Scalable, Open‑Source Driven
+      </h2>
+      <p data-en="We build resilient systems, automate workflows and keep your data safe."
+         data-pt="Construímos sistemas resilientes, automatizamos fluxos de trabalho e mantemos os seus dados seguros.">
+        We build resilient systems, automate workflows and keep your data safe.
+      </p>
+      <a href="#contact" class="btn btn--primary"
+         data-en="Get in Touch"
+         data-pt="Fale Connosco">Get in Touch</a>
     </div>
   </section>
 
   <!-- ==================== SERVICES ==================== -->
   <section id="services" class="section">
     <div class="container">
-      <h2 class="section__title">Our Services</h2>
+      <h2 class="section__title"
+          data-en="Our Services"
+          data-pt="Os Nossos Serviços">Our Services</h2>
 
       <div class="services__grid">
+        <!-- Card 1 -->
         <article class="card">
-          <h3>Cybersecurity &amp; Forensics</h3>
-          <p>Threat hunting, incident response and evidence collection with a forensic‑grade approach.</p>
+          <h3 data-en="Cybersecurity & Forensics"
+              data-pt="Cibersegurança & Investigação Forense">
+            Cybersecurity & Forensics
+          </h3>
+          <p data-en="Threat hunting, incident response and evidence collection with a forensic‑grade approach."
+             data-pt="Caça a ameaças, resposta a incidentes e recolha de provas com abordagem forense.">
+            Threat hunting, incident response and evidence collection with a forensic‑grade approach.
+          </p>
         </article>
 
+        <!-- Card 2 -->
         <article class="card">
-          <h3>Custom Development</h3>
-          <p>Tailor‑made web, mobile and cloud applications built for performance and security.</p>
+          <h3 data-en="Custom Development"
+              data-pt="Desenvolvimento Personalizado">
+            Custom Development
+          </h3>
+          <p data-en="Tailor‑made web, mobile and cloud applications built for performance and security."
+             data-pt="Aplicações web, móveis e na nuvem feitas à medida, com foco em desempenho e segurança.">
+            Tailor‑made web, mobile and cloud applications built for performance and security.
+          </p>
         </article>
 
+        <!-- Card 3 -->
         <article class="card">
-          <h3>Workflow Automation</h3>
-          <p>Automate repetitive tasks, integrate APIs and keep your processes error‑free.</p>
+          <h3 data-en="Workflow Automation"
+              data-pt="Automação de Fluxos de Trabalho">
+            Workflow Automation
+          </h3>
+          <p data-en="Automate repetitive tasks, integrate APIs and keep your processes error‑free."
+             data-pt="Automatize tarefas repetitivas, integre APIs e mantenha processos sem erros.">
+            Automate repetitive tasks, integrate APIs and keep your processes error‑free.
+          </p>
         </article>
 
+        <!-- Card 4 -->
         <article class="card">
-          <h3>Consulting</h3>
-          <p>Strategic advice, architecture reviews and security audits from seasoned experts.</p>
+          <h3 data-en="Consulting"
+              data-pt="Consultoria">Consulting</h3>
+          <p data-en="Strategic advice, architecture reviews and security audits from seasoned experts."
+             data-pt="Consultoria estratégica, revisões de arquitetura e auditorias de segurança por especialistas.">
+            Strategic advice, architecture reviews and security audits from seasoned experts.
+          </p>
         </article>
 
+        <!-- Card 5 -->
         <article class="card">
-          <h3>And more…</h3>
-          <p>We love solving new challenges – ask us what we can do for you!</p>
+          <h3 data-en="And more…" data-pt="E muito mais…">And more…</h3>
+          <p data-en="We love solving new challenges – ask us what we can do for you!"
+             data-pt="Adoramos resolver novos desafios – pergunte‑nos o que podemos fazer por si!">
+            We love solving new challenges – ask us what we can do for you!
+          </p>
         </article>
       </div>
     </div>
@@ -83,11 +129,14 @@
   <!-- ==================== ABOUT ==================== -->
   <section id="about" class="section section--alt">
     <div class="container">
-      <h2 class="section__title">About Segridade</h2>
-      <p class="lead">
-        Methodical, resourceful, and open‑source driven. We build secure, scalable systems
-        with rollback‑ready workflows. Our passion is keeping your data safe while you focus on
-        growth.
+      <h2 class="section__title"
+          data-en="About Segridade"
+          data-pt="Sobre a Segridade">About Segridade</h2>
+
+      <p class="lead"
+         data-en="Methodical, resourceful, and open‑source driven. We build secure, scalable systems with rollback‑ready workflows. Our passion is keeping your data safe while you focus on growth."
+         data-pt="Metódicos, engenhosos e impulsionados por código‑aberto. Construímos sistemas seguros e escaláveis com fluxos de trabalho prontos para rollback. A nossa paixão é manter os seus dados seguros enquanto se concentra no crescimento.">
+        Methodical, resourceful, and open‑source driven. We build secure, scalable systems with rollback‑ready workflows. Our passion is keeping your data safe while you focus on growth.
       </p>
     </div>
   </section>
@@ -95,23 +144,37 @@
   <!-- ==================== CONTACT ==================== -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section__title">Contact Us</h2>
+      <h2 class="section__title"
+          data-en="Contact Us"
+          data-pt="Contacte‑nos">Contact Us</h2>
 
-      <form class="contact-form" action="mailto:segridade@gmail.com" method="post" enctype="text/plain">
+      <form class="contact-form"
+            action="mailto:segridade@gmail.com"
+            method="post"
+            enctype="text/plain">
+
         <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="email"
+                 data-en="Your Email"
+                 data-pt="Seu Email">Your Email</label>
+          <input type="email" id="email" name="email"
+                 placeholder="you@example.com"
+                 required />
         </div>
 
         <div class="form-group">
-          <label for="message">Your Message</label>
+          <label for="message"
+                 data-en="Your Message"
+                 data-pt="Sua Mensagem">Your Message</label>
           <textarea id="message" name="message"
                     rows="5"
                     placeholder="How can we help you?"
                     required></textarea>
         </div>
 
-        <button type="submit" class="btn btn--primary">Send Message</button>
+        <button type="submit" class="btn btn--primary"
+                data-en="Send Message"
+                data-pt="Enviar Mensagem">Send Message</button>
       </form>
     </div>
   </section>
@@ -119,27 +182,59 @@
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p>&copy; <span id="year"></span> Segridade – All rights reserved.</p>
+      <p>&copy; <span id="year"></span>
+        <span data-en="Segridade – All rights reserved."
+              data-pt="Segridade – Todos os direitos reservados.">Segridade – All rights reserved.</span>
+      </p>
     </div>
   </footer>
 
+  <!-- ==================== SCRIPTS ==================== -->
   <script>
-    // Show the current year automatically
+    // ---------- 1️⃣ Show current year ----------
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile navigation toggle
+    // ---------- 2️⃣ Mobile navigation ----------
     const navToggle = document.querySelector('.nav__toggle');
     const navList   = document.querySelector('.nav__list');
 
     navToggle.addEventListener('click', () => {
       navList.classList.toggle('nav__list--open');
-      // Switch icon between menu & x
       const icon = navToggle.querySelector('i');
       icon.dataset.feather = navList.classList.contains('nav__list--open') ? 'x' : 'menu';
-      feather.replace(); // re‑render feather icons
+      feather.replace();                // re‑render feather icons
     });
 
-    // Init feather icons
+    // ---------- 3️⃣ Language switcher ----------
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const htmlTag     = document.documentElement;   // <html>
+
+    // Helper: change the innerText of every element that has data‑en / data‑pt
+    function applyLanguage(lang) {
+      // 1️⃣ Update the <html lang="">
+      htmlTag.setAttribute('lang', lang);
+
+      // 2️⃣ Replace every element that carries the data‑en / data‑pt attributes
+      document.querySelectorAll('[data-en]').forEach(el => {
+        const txt = el.getAttribute(`data-${lang}`);
+        if (txt) el.textContent = txt;
+      });
+
+      // 3️⃣ Keep the title tag in sync (it also has data‑en / data‑pt)
+      const title = document.querySelector('title');
+      const titleTxt = title.getAttribute(`data-${lang}`);
+      if (titleTxt) title.textContent = titleTxt;
+    }
+
+    // Initialise with English (default)
+    applyLanguage('en');
+
+    // Attach click listeners
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+    });
+
+    // init feather icons (menu / X)
     feather.replace();
   </script>
 </body>

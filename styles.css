@@ -242,3 +242,33 @@ footer {
 @media (max-width: 480px) {
   .hero { padding: 4rem 0 3rem; }
 }
+
+/* --------------------------------------------------- */
+/* 12. Language switcher (EN | PT)                    */
+.lang-switch {
+  display: flex;
+  gap: .5rem;
+  margin-right: 1rem;
+}
+.lang-btn {
+  background: transparent;
+  color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+  border-radius: .3rem;
+  padding: .2rem .5rem;
+  font-size: .85rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.lang-btn:hover,
+.lang-btn:focus {
+  background: var(--clr-primary-300);
+  color: var(--clr-primary-900);
+  outline: none;
+}
+
+/* make the switcher appear on the same line as the logo on desktop */
+@media (min-width: 769px) {
+  .header__inner { justify-content: space-between; }
+}
+
